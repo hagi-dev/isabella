@@ -1,12 +1,19 @@
 import React from 'react';
 import Header from '../components/Header';
+import HomeMain from '../components/HomeMain';
 import '../assets/styles/App.scss';
 
-const App = () =>
-(
-    <div className="App">
-        <Header/>
-    </div>
-);
+class App extends React.Component {
+
+    render() {
+        return(
+            <div className="App" >
+                <Header/>
+                <HomeMain/>
+            </div>
+        )    
+    };
+
+}
 
 export default App;

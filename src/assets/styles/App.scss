@@ -5,6 +5,10 @@
 
 body{
     margin: 0;
-    background-color: red;
-    color: white
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.App{
+    overflow: 'scroll',
 }

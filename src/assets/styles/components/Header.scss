@@ -1,12 +1,17 @@
 header{
     width: 100%;
     height: 75px;
-    background-color: aquamarine;
     padding-left: 50px;
     padding-top: 14;
     display: flex;
-    position: relative;
+    position: fixed;
+    left:0px;
+    top:0;
+    z-index: 9999;
+    background-color:transparent;
+    
 }
+
 
 .logo{
     display: flex;
@@ -32,10 +37,15 @@ header{
     justify-content: space-between;
 }
 
+
 .nav nav ul{
 
     list-style: none;      
     padding:0;
+}
+
+.nav-list{
+    color: white;
 }
 
 .nav nav ul li{
@@ -45,25 +55,25 @@ header{
 .nav nav ul li a{
     margin-right: 30px;
     text-decoration: none;
-    color: black;
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
     font-size: 1rem;
+    color: white;
 }
 
 .anuncio{
-    color: #8D1839;
     font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.3rem;
 }
-
 .barraIzquierda{
     display: none;
+    background-color:#ffffff;
 }
 .barraDerecha{
     display: none;
+    background-color:#ffffff;
 }
 .redesSociales{
     width :20%;
@@ -71,7 +81,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 25px;
 }
 
 svg{
@@ -110,14 +120,12 @@ svg{
     .nav nav ul li a{
         margin-right: 30px;
         text-decoration: none;
-        color: black;
         font-family: 'Mulish', sans-serif;
         font-weight: 600;
         font-size: 1rem;
     }
     
     .anuncio{
-        color: #8D1839;
         font-family: 'Oswald', sans-serif;
         font-weight: bolder;
         text-decoration: none;
@@ -135,13 +143,17 @@ svg{
     }
 }
 
-@media only screen and (max-width:890px){
+@media only screen and (max-width:960px){
     header{
         width: 100%;
         height: 90px;
         padding: 0;
-        background-color: aquamarine;
-        position: relative;
+        position: fixed;
+        left:0px;
+        top:0;
+        z-index: 9999;
+        background-color:transparent;
+        color: white;
     }
     .logo{
         display: flex;
@@ -150,6 +162,7 @@ svg{
         height: 70px;
         position:absolute;
         left:15px;
+        z-index: 9;
         
     }
     
@@ -169,6 +182,15 @@ svg{
         width:40px; 
         height:40px;
     }
+    .iconoMenu{
+        display:flex;
+        position:absolute;
+        right:50px;
+        top: 0px;
+        cursor:pointer;
+        width:40px; 
+        height:40px;
+    }
 
     svg{
         width:70px; 
@@ -179,20 +201,27 @@ svg{
         width :100%;
         height :100%;
         display: flex;
+        z-index: 99;
         align-items: flex-end;
         justify-content: space-around;
         padding-bottom: 5px;
         position: relative;
+        background-color: transparent;
+
     }
 
-    .nav nav{
+    .nav-list{
         display: none;
         position:absolute;
-        background-color: aqua;
         top: 90px;
         width: 100%;
         height: 300px;
 
+    }
+
+    .nav-list.active{
+        display:block;
+        background-color: white;
     }
     
     .nav nav ul{
@@ -200,7 +229,6 @@ svg{
         list-style: none;      
         padding:0;
         text-align:center;
-        margin-top: 30px;
     }
     
     .nav nav ul li{
@@ -218,40 +246,42 @@ svg{
     }
     
     .anuncio{
-        color: #8D1839;
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         text-decoration: none;
         font-size: 1.3rem;
-        width: 34%;
+        width: 36%;
         text-align:center;
        
     }
     .barraIzquierda{
         display: flex;
-        width:33%;
+        width:32%;
         height: 5px;
         border-radius: 10px;
-        background-color: #8D1839;
         margin-bottom: 5px;
     }
     .barraDerecha{
-        background-color:#8D1839;
         display: flex;
-        width:33%;
+        width:32%;
         height: 5px;
         border-radius: 10px;
         margin-bottom: 5px;
     }
 
 }
+
 @media only screen and (max-width:792px){
     header{
         width: 100%;
         height: 90px;
         padding: 0;
-        background-color: aquamarine;
-        position: relative;
+        position: fixed;
+        left:0px;
+        top:0;
+        z-index: 9999;
+        background-color:transparent;
+        color: white;
     }
     .logo{
         display: flex;
@@ -294,31 +324,41 @@ svg{
         padding-bottom: 5px;
     }
 
-    .nav nav{
+    .nav-list{
         display: none;
+    }
+
+    .nav-list-active{
+        display: block;
+        background-color: white;
+
     }
     
     .nav nav ul{
     
         list-style: none;      
         padding:0;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     
     .nav nav ul li{
         display: inline-block;
         text-decoration: none;
+        width: 400px;
     }
     .nav nav ul li a{
-        margin-right: 30px;
+        
         text-decoration: none;
-        color: black;
         font-family: 'Mulish', sans-serif;
         font-weight: 600;
         font-size: 1rem;
     }
     
     .anuncio{
-        color: #8D1839;
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -332,11 +372,9 @@ svg{
         width:30%;
         height: 5px;
         border-radius: 10px;
-        background-color: #8D1839;
         margin-bottom: 5px;
     }
     .barraDerecha{
-        background-color:#8D1839;
         display: flex;
         width:30%;
         height: 5px;
@@ -344,14 +382,20 @@ svg{
         margin-bottom: 5px;
     }
 
+
 }
+
 @media only screen and (max-width:650px){
     header{
         width: 100%;
         height: 90px;
         padding: 0;
-        background-color: aquamarine;
-        position: relative;
+        position: fixed;
+        left:0px;
+        top:0;
+        z-index: 9999;
+        background-color:transparent;
+        color: white;
     }
     .logo{
         display: flex;
@@ -394,31 +438,40 @@ svg{
         padding-bottom: 5px;
     }
 
-    .nav nav{
+    .nav-list{
         display: none;
+    }
+    .nav-list-active{
+        display: block;
+        background-color: white;
+
     }
     
     .nav nav ul{
     
         list-style: none;      
         padding:0;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     
     .nav nav ul li{
         display: inline-block;
         text-decoration: none;
+        width: 400px;
     }
     .nav nav ul li a{
         margin-right: 30px;
         text-decoration: none;
-        color: black;
         font-family: 'Mulish', sans-serif;
         font-weight: 600;
         font-size: 1rem;
     }
     
     .anuncio{
-        color: #8D1839;
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -432,10 +485,8 @@ svg{
         width:29%;
         height: 5px;
         border-radius: 10px;
-        background-color: #8D1839;
     }
     .barraDerecha{
-        background-color:#8D1839;
         display: flex;
         width:29%;
         height: 5px;
@@ -444,13 +495,18 @@ svg{
     }
 
 }
+
 @media only screen and (max-width:540px){
     header{
         width: 100%;
         height: 90px;
         padding: 0;
-        background-color: aquamarine;
-        position: relative;
+        position: fixed;
+        left:0px;
+        top:0;
+        z-index: 9999;
+        background-color:transparent;
+        color: white;
     }
     .logo{
         display: flex;
@@ -492,8 +548,13 @@ svg{
         padding-bottom: 5px;
     }
 
-    .nav nav{
+    .nav-list{
         display: none;
+    }
+    .nav-list-active{
+        display: block;
+        background-color: white;
+
     }
     
     .nav nav ul{
@@ -516,7 +577,6 @@ svg{
     }
     
     .anuncio{
-        color: #8D1839;
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         text-decoration: none;
@@ -530,10 +590,8 @@ svg{
         width:28%;
         height: 5px;
         border-radius: 10px;
-        background-color: #8D1839;
     }
     .barraDerecha{
-        background-color:#8D1839;
         display: flex;
         width:28%;
         height: 5px;

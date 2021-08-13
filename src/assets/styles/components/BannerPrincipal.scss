@@ -1,0 +1,401 @@
+@import url("https://use.typekit.net/nbc5fqs.css");
+section{
+    width: 100%;
+    height: 2000px;
+    // display: none;
+    position: relative;
+    z-index: 99;
+}
+.container__banner-principal {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 80px;
+
+}
+.fondo__banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 720px;
+    z-index: 9;
+}
+
+.fondo__banner img{
+    width: 100%;
+    height: 720px;
+}
+
+.banner__title-contenido{
+    height: 600px; 
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+
+}
+.banner__botones{
+    width: 78%;
+    display: flex;
+    margin: 13px 0;
+    justify-content:space-around;
+}
+.banner__botones-conoceMas{
+    width: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.banner__botones-inscribirse{
+    width: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner__botones a p{
+    font-weight: 200;
+    font-size: 1rem;
+}
+.banner__botones a {
+    text-decoration: none;
+    width: 150px;
+    height: 35px;
+    display:flex;
+    border: 1px solid white;
+    border-radius: 10px;
+    align-items:center;
+    justify-content:center;
+    color: white;
+}
+.banner__botones a:hover {
+    background-color: white;
+    color:black;
+    border:0;
+}
+
+
+
+.barraRight{
+   width: 70px;
+   height:2px;
+   background-color:white;
+}
+
+.barraLeft{
+    width: 70px;
+   height:2px;
+   background-color:white;
+
+}
+.subTitle{
+    margin: 13px 0;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitle__description{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px 6px
+}
+
+.banner__title-contenido P{
+    margin: 13px 0;
+    display: inline-block;
+    width: 400px; 
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.newCollection{
+    margin: 13px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-shadow: rgb(41, 41, 41) 0.02em 0.02em 0.4em
+}
+
+.modaEstilo{
+    margin: 13px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.7rem;
+}
+
+.banner__callToAction-contenido{
+    height: 600px;
+    visibility: 50%;
+    font-family: lato, sans-serif;
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    position: relative;
+}
+
+.banner__linkAction{
+    width: 200px;
+    height: 200px;
+    opacity: 80%;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 100px;
+
+}
+
+.circuloInferior{
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    background-color: rgb(223, 222, 222);
+    opacity: 40%;
+    border-radius:50%;
+    top:48px;
+    left: 0px;
+}
+
+.circuloSuperior{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(241, 240, 240);
+    opacity: 20%;
+    border-radius:50%;
+    top:25px;
+    left: 0px;
+}
+
+.banner__circuloContenedor{
+    width: 250px;
+    height: 250px;
+    opacity: 100%;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    
+}
+
+.banner__linkAction a{
+    text-decoration: none;
+}
+
+.banner__linkAction a h2{
+ display :inline-block;
+ font-size: 1rem;
+ font-weight: 500;
+ color:white;
+ opacity: 100%;
+ text-align: center;
+}
+
+.banner__linkAction h1{
+    display :block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:white;
+    opacity: 100%;
+
+}
+
+.banner__modelo-contenido{
+    height: 600px;
+    display:block;
+}
+
+.banner__modelo-contenido img{
+    width: auto;
+    height: 667px;
+}
+
+.MuiGrid-root{
+    z-index: 99;
+}
+@media only screen and (max-width:959px){
+    .container__banner-principal {
+        width: 100%;
+        height: 1330px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 90px;
+    
+    }
+    .banner__modelo-contenido img{
+        width: auto;
+        height: 657px;
+    }
+    .banner__botones{
+        width: 50%;
+    }
+    .banner__title-contenido{
+        height: 420px;
+    }
+    .fondo__banner{
+        height: 1140px;
+    }
+    
+    .fondo__banner img{
+        height: 1140px;
+    }
+    .banner__modelo-contenido{
+        display:flex;
+        justify-content: flex-end;
+    }
+    .circuloInferior{
+        top:48px;
+        left: 60px;
+    }
+    
+    .circuloSuperior{
+        top:25px;
+        left: 60px;
+    }
+    .banner__circuloContenedor{
+        margin-left: 60px;
+        
+    }
+    
+
+}
+
+@media only screen and (max-width:650px){
+    .container__banner-principal {
+        width: 100%;
+        height: 1330px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 90px;
+    
+    }
+    .banner__modelo-contenido img{
+        width: auto;
+        height: 605px;
+        
+    }
+    .banner__title-contenido{
+        height: 410px;
+    }
+    .fondo__banner{
+        height: 1081px;
+    }
+    
+    .fondo__banner img{
+        height: 1081px;
+    }
+
+    .modaEstilo{
+        font-size: 2.2rem;
+    }
+    .newCollection{
+        font-size: 3rem;
+    }
+
+    .circuloInferior{
+        width: 140px;
+        height: 140px;
+        top:48px;
+        left: 45px;
+    }
+    
+    .circuloSuperior{
+        width: 190px;
+        height: 190px;
+        left: 45px;
+    }
+    
+    .banner__circuloContenedor{
+        width: 250px;
+        height: 250px;
+        opacity: 100%;
+        border-radius:50%;
+        display:flex;
+        justify-content: center;
+        align-items:flex-start;
+        
+    }
+        
+    .banner__linkAction a h2{
+        font-size: 0.7rem;
+        font-weight: 500;
+        position: absolute;
+        top: 95px;
+        left: 50px;
+
+    }
+    
+    .banner__linkAction h1{
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        color:white;
+        top: 105px;
+        left: 50px;
+    }
+
+    .banner__botones a p{
+        font-weight: 200;
+        font-size: 1rem;
+    }
+    .banner__botones a {
+        text-decoration: none;
+        width: 150px;
+        height: 35px;
+        display:flex;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        align-items:center;
+        justify-content:center;
+    }
+    .banner__title-contenido P{
+        margin: 13px 0;
+        width: 400px; 
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+    .banner__callToAction-contenido{
+        font-family: lato, sans-serif;
+        display:flex;
+        justify-content: center;
+        padding-top: 60px;
+        position: relative;
+    }
+    .banner__botones-conoceMas{
+        width: 100px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    .banner__botones-inscribirse{
+        width: 100px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .banner__botones{
+        width: 70%;
+    }
+    .banner__modelo-contenido{
+        display:block;
+    }
+}
