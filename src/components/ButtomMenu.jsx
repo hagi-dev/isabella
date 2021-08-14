@@ -15,6 +15,7 @@ class ButtomMenu extends React.Component
     /* validar si nav menu se ve o no y activarlo si no esta por medio del boton menu qu sala apartir de display mediano*/
     handleClik = () =>{
 
+
         console.log(this.state.count)
         this.setState({count:this.state.count +1});
 

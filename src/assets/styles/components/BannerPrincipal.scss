@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/nbc5fqs.css");
 section{
     width: 100%;
-    height: 2000px;
+    height: 1050px;
     // display: none;
     position: relative;
     z-index: 99;
@@ -71,8 +71,8 @@ section{
     width: 150px;
     height: 35px;
     display:flex;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 3px solid #8D1839;
+    border-radius: 20px;
     align-items:center;
     justify-content:center;
     color: white;
@@ -352,20 +352,6 @@ section{
         left: 50px;
     }
 
-    .banner__botones a p{
-        font-weight: 200;
-        font-size: 1rem;
-    }
-    .banner__botones a {
-        text-decoration: none;
-        width: 150px;
-        height: 35px;
-        display:flex;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 10px;
-        align-items:center;
-        justify-content:center;
-    }
     .banner__title-contenido P{
         margin: 13px 0;
         width: 400px; 
@@ -378,19 +364,6 @@ section{
         justify-content: center;
         padding-top: 60px;
         position: relative;
-    }
-    .banner__botones-conoceMas{
-        width: 100px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        
-    }
-    .banner__botones-inscribirse{
-        width: 100px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
     }
     .banner__botones{
         width: 70%;

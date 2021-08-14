@@ -1,0 +1,27 @@
+.boton{
+    width: 150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.boton a p{
+    font-weight: 200;
+    font-size: 1rem;
+}
+.boton a {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    display:flex;
+    border: 1px solid #8D1839;
+    border-radius: 20px;
+    align-items:center;
+    justify-content:center;
+    color: #8D1839;
+}
+.boton a:hover {
+    background-color: #8D1839;
+    color:rgb(255, 255, 255);
+    border:0;
+}

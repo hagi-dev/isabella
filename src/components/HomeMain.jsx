@@ -1,12 +1,14 @@
 import React from 'react';
 import "../assets/styles/components/HomeMain.scss";
-import Grid from '@material-ui/core/Grid';
-import { DataGrid } from '@material-ui/data-grid';
 import BannerPrincipal from './BannerPrincipal';
+import AvanceCategoria from './AvanceCategoria';
+import EmpresariaHome from './EmpresariaHome';
 
 const Main = () => (
     <main>
         <BannerPrincipal/>
+        <AvanceCategoria/> 
+        <EmpresariaHome/>
     </main>
 );
 
