@@ -22,12 +22,10 @@ section{
     height: 720px;
     z-index: 9;
 }
-
 .fondo__banner img{
     width: 100%;
     height: 720px;
 }
-
 .banner__title-contenido{
     height: 600px; 
     font-family: lato, sans-serif;
@@ -61,7 +59,6 @@ section{
     justify-content:center;
     align-items:center;
 }
-
 .banner__botones a p{
     font-weight: 200;
     font-size: 1rem;
@@ -71,26 +68,30 @@ section{
     width: 150px;
     height: 35px;
     display:flex;
-    border: 3px solid #8D1839;
+    background-color: rgb(16, 1, 39);
     border-radius: 20px;
     align-items:center;
     justify-content:center;
+    font-family: 'Mulish', sans-serif;
     color: white;
+    transition: 0.8s ease all;
 }
 .banner__botones a:hover {
-    background-color: white;
-    color:black;
-    border:0;
+    background-color: transparent;
+    border: 3px solid rgb(16, 1, 39);
+    transition: 0.8s ease all;
+
 }
+.banner__botones p:hover{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
 
-
-
+}
 .barraRight{
    width: 70px;
    height:2px;
    background-color:white;
 }
-
 .barraLeft{
     width: 70px;
    height:2px;
@@ -104,14 +105,12 @@ section{
     justify-content: center;
     align-items: center;
 }
-
 .subTitle__description{
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
     margin: 0px 6px
 }
-
 .banner__title-contenido P{
     margin: 13px 0;
     display: inline-block;
@@ -120,7 +119,6 @@ section{
     font-weight: 200;
     text-align: center;
 }
-
 .newCollection{
     margin: 13px 0;
     display: inline-block;
@@ -130,7 +128,6 @@ section{
     font-size: 3.5rem;
     text-shadow: rgb(41, 41, 41) 0.02em 0.02em 0.4em
 }
-
 .modaEstilo{
     margin: 13px 0;
     display: inline-block;
@@ -140,7 +137,6 @@ section{
     font-style: normal;
     font-size: 2.7rem;
 }
-
 .banner__callToAction-contenido{
     height: 600px;
     visibility: 50%;
@@ -150,7 +146,6 @@ section{
     padding-top: 60px;
     position: relative;
 }
-
 .banner__linkAction{
     width: 200px;
     height: 200px;
@@ -162,7 +157,6 @@ section{
     margin-bottom: 100px;
 
 }
-
 .circuloInferior{
     width: 200px;
     height: 200px;
@@ -173,7 +167,6 @@ section{
     top:48px;
     left: 0px;
 }
-
 .circuloSuperior{
     position:absolute;
     width: 250px;
@@ -184,7 +177,6 @@ section{
     top:25px;
     left: 0px;
 }
-
 .banner__circuloContenedor{
     width: 250px;
     height: 250px;
@@ -193,13 +185,10 @@ section{
     display:flex;
     justify-content: center;
     align-items:flex-start;
-    
 }
-
 .banner__linkAction a{
     text-decoration: none;
 }
-
 .banner__linkAction a h2{
  display :inline-block;
  font-size: 1rem;
@@ -208,7 +197,6 @@ section{
  opacity: 100%;
  text-align: center;
 }
-
 .banner__linkAction h1{
     display :block;
     font-size: 2.5rem;
@@ -217,20 +205,24 @@ section{
     opacity: 100%;
 
 }
-
 .banner__modelo-contenido{
     height: 600px;
     display:block;
 }
-
 .banner__modelo-contenido img{
     width: auto;
     height: 667px;
 }
-
 .MuiGrid-root{
     z-index: 99;
 }
+
+@media screen and (max-width:1016px){
+    .circuloSuperior{
+        width: 236px;
+    }    
+}
+
 @media only screen and (max-width:959px){
     .container__banner-principal {
         width: 100%;
@@ -240,6 +232,7 @@ section{
         padding-top: 90px;
     
     }
+
     .banner__modelo-contenido img{
         width: auto;
         height: 657px;
@@ -331,6 +324,7 @@ section{
         display:flex;
         justify-content: center;
         align-items:flex-start;
+        margin:0px;
         
     }
         

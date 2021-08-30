@@ -18,7 +18,7 @@ const Header = (props) =>{
     React.useEffect(()=>{
         let estado= window.pageYOffset;
         const verNav=() =>{
-            if(innerWidth>=960 ) {
+            if(innerWidth>960 ) {
                 document.getElementById("nav-list2").style.display = "block";
             }else{
                 document.getElementById("nav-list2").style.display = "none";

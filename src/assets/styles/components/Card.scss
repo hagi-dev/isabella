@@ -1,0 +1,74 @@
+
+.avanceCategoria__dama-card{
+    width: 340px;
+    height:500px;
+    background-image: radial-gradient(circle, #ffffff, #d8c9de, #bf91b2, #aa587a, #8d1839);
+    display:grid;
+    position: relative;
+    grid-template-columns: 40% 60%;
+    border-radius:20px;
+    margin:0 auto;
+}
+.avanceCategoria__dama-cardDescription{
+    z-index: 999999;
+}
+.avanceCategoria__dama-cardDescription h1{
+    width:150px;
+    display:block;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size:1.5rem;
+    margin-top: 280%;
+    margin-left: 50px; 
+}
+.avanceCategoria__dama-cardDescription a{
+    display:block;
+    margin: 20px 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size:1rem;
+    text-decoration:none;
+    color: black;
+    text-decoration: underline;
+    margin-left: 50px; 
+    width:300px;
+
+}
+
+.avanceCategoria__dama-cardDecoration{
+    position:absolute;
+    width: 68%;
+    height: 500px;
+    top:0px;
+    left: 20px;
+    background-color: #ffffff;
+    opacity: 50%;
+}
+
+.avanceCategoria__dama-cardDecoration.uno{
+    top:0px;
+    left: 20px;
+}
+.avanceCategoria__dama-cardDecoration.dos{
+    top:0px;
+    left: 55px;
+}
+.avanceCategoria__dama-cardDecoration.tres{
+    top:0px;
+    left: 90px;
+}
+.avanceCategoria__dama-cardImage{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.avanceCategoria__dama-cardImage img{
+    width: auto;
+    height:500px;
+    z-index:999999;
+    filter: drop-shadow(0 0px 50px 10px rgba(0, 0, 0, 0.7));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
