@@ -20,19 +20,19 @@
     }//contenedor de cuantos contenidos hay y son tambien botones en pie de pagina
 
     .slick-track{
-        padding:30px;
+        padding-top:30px;
         height:600px;
     }
 
     button{
         top: 40%;
         &::before{
-            color:black;
+            color:rgb(75, 75, 75);
             position: absolute;
-            opacity: 0.2;
+            opacity: 1;
         }
         &:hover{
-            opacity: 1;
+            opacity: 0.5;
         }
     }
     .slick-prev{
@@ -68,6 +68,9 @@
             right:1.5%;
             z-index: 9999;
         }
+        button{
+            top: 40%;
+        }
     }
 }
 @media screen and (max-width:1260px){
@@ -77,8 +80,11 @@
             z-index: 9;
         }
         .slick-arrow.slick-next{
-            right:0.8%;
+            right:3%;
             z-index: 9999;
+        }
+        button{
+            top: 40%;
         }
     }
 }
@@ -88,6 +94,14 @@
         .slick-arrow.slick-next{
             right:5%;
             z-index: 9999;
+        }
+        .slick-slide{
+            width: 483px !important;
+            display: flex !important;
+            justify-content: center;
+        }
+        button{
+            top: 40%;
         }
     }   
     

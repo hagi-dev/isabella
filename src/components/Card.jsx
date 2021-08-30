@@ -4,7 +4,7 @@ import modeloPrueba from '../assets/static/Prendas/modelo5.1.png';
 
 const Card = ({name,url}) => {
     return (
-        <div className="avanceCategoria__dama-card">
+        <li className="avanceCategoria__dama-card">
             <div className="avanceCategoria__dama-cardDecoration uno"></div>
             <div className="avanceCategoria__dama-cardDecoration dos"></div>
             <div className="avanceCategoria__dama-cardDecoration tres"></div>
@@ -15,7 +15,7 @@ const Card = ({name,url}) => {
             <div className="avanceCategoria__dama-cardImage">
                 <img src={url} alt="" />
             </div>
-        </div>
+        </li>
     )
 }
 

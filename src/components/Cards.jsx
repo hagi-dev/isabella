@@ -3,43 +3,49 @@ import "../assets/styles/components/Cards.scss";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+//import Slider from 'infinite-react-carousel';
+//import InfiniteCarousel from 'react-leaf-carousel';
 
 const Cards = ({children}) => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        autoplay: false,
-        autoplaySpeed: 5000,
-        pauseOnHover: true,
-        initialSlide: 0,
-        responsive:[
-            {   
-                breakpoint:1100,
-                settings:{
-                    slidesToShow:1,
-                    slidesToScroll:1,
-                    initialSlide: 2,
-                    dots: true,
-                    infinite: true,
-                },               
-                
-                breakpoint:600,
-                settings:{
-                    slidesToShow:1,
-                    slidesToScroll:1,
-                    initialSlide: 2,
-                },
-                
-            },
-        ]
-      };
-    return (
+    const settings =  {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 880,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };    return (
         <div className="avanceCategoria__dama-cards">
-            {/* <Slider {...settings}> */}
+            <Slider {...settings}> 
                 {children}
-            {/* </Slider> */}
+            </Slider>
         </div>
     )
 }
