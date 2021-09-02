@@ -1,5 +1,5 @@
 
-.avanceCategoria__dama-cards{
+.carousel__cards{
     width: 1400px;
     display: block;
     align-items: center;
@@ -46,7 +46,7 @@
 }//contenedor principal de las cards
 
 @media screen and (max-width:1500px){
-    .avanceCategoria__dama-cards{    
+    .carousel__cards{    
         .slick-prev{
             left:1%;
             z-index: 9;
@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width:1300px){
-    .avanceCategoria__dama-cards{    
+    .carousel__cards{    
         .slick-prev{
             left:1%;
             z-index: 9;
@@ -74,7 +74,7 @@
     }
 }
 @media screen and (max-width:1260px){
-    .avanceCategoria__dama-cards{    
+    .carousel__cards{    
         .slick-prev{
             left:1.5%;
             z-index: 9;
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width:600px){
-    .avanceCategoria__dama-cards{    
+    .carousel__cards{    
         .slick-arrow.slick-next{
             right:5%;
             z-index: 9999;

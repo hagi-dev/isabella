@@ -1,5 +1,5 @@
 
-.avanceCategoria__dama-card{
+.carousel__card{
     width: 340px;
     height:500px;
     background-image: radial-gradient(circle, #ffffff, #d8c9de, #bf91b2, #aa587a, #8d1839);
@@ -9,10 +9,10 @@
     border-radius:20px;
     margin:0 auto;
 }
-.avanceCategoria__dama-cardDescription{
+.card__description{
     z-index: 999999;
 }
-.avanceCategoria__dama-cardDescription h1{
+.card__description h1{
     width:150px;
     display:block;
     font-family: 'Mulish', sans-serif;
@@ -21,7 +21,7 @@
     margin-top: 280%;
     margin-left: 50px; 
 }
-.avanceCategoria__dama-cardDescription a{
+.card__description a{
     display:block;
     margin: 20px 0;
     font-family: 'Mulish', sans-serif;
@@ -35,7 +35,7 @@
 
 }
 
-.avanceCategoria__dama-cardDecoration{
+.card__decoration{
     position:absolute;
     width: 68%;
     height: 500px;
@@ -45,24 +45,24 @@
     opacity: 50%;
 }
 
-.avanceCategoria__dama-cardDecoration.uno{
+.card__decoration.uno{
     top:0px;
     left: 20px;
 }
-.avanceCategoria__dama-cardDecoration.dos{
+.card__decoration.dos{
     top:0px;
     left: 55px;
 }
-.avanceCategoria__dama-cardDecoration.tres{
+.card__decoration.tres{
     top:0px;
     left: 90px;
 }
-.avanceCategoria__dama-cardImage{
+.card__imagen{
     display:flex;
     justify-content:center;
     align-items:center;
 }
-.avanceCategoria__dama-cardImage img{
+.card__imagen img{
     width: auto;
     height:500px;
     z-index:999999;

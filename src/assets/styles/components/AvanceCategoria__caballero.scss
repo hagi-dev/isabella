@@ -1,0 +1,43 @@
+.AvanceCategoria__caballero{
+    width:100%;
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
+
+.avanceCategoria__caballero-title{
+    width:100%;
+    background-color: rgb(46, 46, 46);
+    height :120px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.avanceCategoria__caballero-title h1{
+    width:100%;
+   font-family: 'Monoton', cursive;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color :white;
+}
+.avanceCategoria__caballero-title h3{
+    width:100%;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size:1rem;
+    display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   color :white;
+   margin-bottom: 5px;
+   &:hover{
+       opacity: .5;
+   }
+}
+

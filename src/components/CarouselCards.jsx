@@ -6,7 +6,7 @@ import Slider from "react-slick";
 //import Slider from 'infinite-react-carousel';
 //import InfiniteCarousel from 'react-leaf-carousel';
 
-const Cards = ({children}) => {
+const CarouselCards = ({children}) => {
     const settings =  {
       dots: true,
       infinite: true,
@@ -14,6 +14,8 @@ const Cards = ({children}) => {
       slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
+      autoplay: true,
+      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 1100,
@@ -42,7 +44,7 @@ const Cards = ({children}) => {
         }
       ]
     };    return (
-        <div className="avanceCategoria__dama-cards">
+        <div className="carousel__cards">
             <Slider {...settings}> 
                 {children}
             </Slider>
@@ -50,4 +52,4 @@ const Cards = ({children}) => {
     )
 }
 
-export default Cards;
+export default CarouselCards;

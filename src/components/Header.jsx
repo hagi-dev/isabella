@@ -17,6 +17,7 @@ const Header = (props) =>{
      
     React.useEffect(()=>{
         let estado= window.pageYOffset;
+        console.log(estado);
         const verNav=() =>{
             if(innerWidth>960 ) {
                 document.getElementById("nav-list2").style.display = "block";
@@ -26,11 +27,14 @@ const Header = (props) =>{
             console.log('aki esta el problema')
         }
         const changeColor= () =>{
-        let valor2=window.pageYOffset;
+        let valor2=window.pageYOffset;//valor2 es la referencia al valor canbiante de el evento scroll
+        console.log("valor2: ",valor2 , "estado: ", estado) ;
         
-            if (valor2 <= estado && innerWidth<960) {
+            if (valor2 >= estado ) {
                 console.log('agarra')
-                document.getElementById("nav-list2").style.display = "none";
+                document.getElementById("header").style.display = "none";
+            }else{
+                document.getElementById("header").style.display = "flex";
             }
             estado= valor2;
     
