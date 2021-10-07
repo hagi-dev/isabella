@@ -16,7 +16,10 @@ const EmpresariaHome = () => {
         </svg>;
     return (
         <section className="Empresaria">
-             <div className="Empresaria__home">
+            <div className="Empresaria__title">
+                <h1>Trabaja con Isabella </h1>
+            </div>
+            <div className="Empresaria__home">
             <Grid container className="exitosa" >
                 <Grid  item xs={12} md={5} sm={6} >
                     <Box className="Empresaria__container-description">
@@ -32,6 +35,7 @@ const EmpresariaHome = () => {
                     <Box >
                         <div className="Empresaria__img" id="Empresaria__img">
                             <EmpresariaGrafica/>
+                        <a name="premios"></a>
                         </div>
                     </Box>
                 </Grid>
@@ -47,7 +51,7 @@ const EmpresariaHome = () => {
                 <Grid  item xs={12} md={5} sm={6}  >
                     <Box className="Empresaria__container-description">
                         <div className="Empresaria__description">
-                            <h1>OBTEN PREMIOS Y INCENTIVOS PARA TY</h1>
+                            <h1>OBTEN PREMIOS Y INCENTIVOS</h1>
                             <p className="Empresaria__description-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'
                             </p>
                             <Buttom name={"Mas detalles"} estilo={"balck"}/> 

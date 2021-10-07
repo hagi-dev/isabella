@@ -3,8 +3,7 @@ import "../assets/styles/components/Cards.scss";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-//import Slider from 'infinite-react-carousel';
-//import InfiniteCarousel from 'react-leaf-carousel';
+import fondo from '../assets/static/fondo6.png';
 
 const CarouselCards = ({children}) => {
     const settings =  {
@@ -15,7 +14,7 @@ const CarouselCards = ({children}) => {
       slidesToScroll: 1,
       initialSlide: 0,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1100,
@@ -31,12 +30,11 @@ const CarouselCards = ({children}) => {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 0,
             infinite: true,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 450,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -44,7 +42,7 @@ const CarouselCards = ({children}) => {
         }
       ]
     };    return (
-        <div className="carousel__cards">
+        <div className="carousel__cards"  >
             <Slider {...settings}> 
                 {children}
             </Slider>

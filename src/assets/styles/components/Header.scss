@@ -141,12 +141,6 @@ svg{
     .redesSociales{
         display:none;
     }
-    
-    svg{
-        width: 40px;
-        height: 40px;
-        margin-right: 8px;
-    }
 }
 
 @media only screen and (max-width:960px){
@@ -154,12 +148,6 @@ svg{
         width: 100%;
         height: 90px;
         padding: 0;
-        position: fixed;
-        left:0px;
-        top:0;
-        z-index: 9999;
-        background-color:transparent;
-        color: white;
     }
     .logo{
         display: flex;
@@ -198,7 +186,7 @@ svg{
         height:40px;
     }
 
-    svg{
+    #menuButtom{
         width:70px; 
         height:65px;
     }
@@ -219,7 +207,7 @@ svg{
     .nav-list{
         display: none;
         position:absolute;
-        top: 90px;
+        top: 100px;
         width: 100%;
         height: 100vh;
 
@@ -281,13 +269,6 @@ svg{
     header{
         width: 100%;
         height: 90px;
-        padding: 0;
-        position: fixed;
-        left:0px;
-        top:0;
-        z-index: 9999;
-        background-color:transparent;
-        color: white;
     }
     .logo{
         display: flex;
@@ -316,7 +297,7 @@ svg{
         cursor:pointer;
     }
 
-    svg{
+    #menuButtom{
         width:70px; 
         height:65px;
     }
@@ -395,13 +376,6 @@ svg{
     header{
         width: 100%;
         height: 90px;
-        padding: 0;
-        position: fixed;
-        left:0px;
-        top:0;
-        z-index: 9999;
-        background-color:transparent;
-        color: white;
     }
     .logo{
         display: flex;
@@ -412,7 +386,14 @@ svg{
         left:15px;
         
     }
-    
+
+    svg{
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+
+    }
+
     .logo img{
     
         width:auto;
@@ -430,10 +411,6 @@ svg{
         height:40px;
     }
 
-    svg{
-        width:70px; 
-        height:65px;
-    }
 
     .nav{
         width :100%;
@@ -506,13 +483,6 @@ svg{
     header{
         width: 100%;
         height: 90px;
-        padding: 0;
-        position: fixed;
-        left:0px;
-        top:0;
-        z-index: 9999;
-        background-color:transparent;
-        color: white;
     }
     .logo{
         display: flex;
@@ -538,11 +508,6 @@ svg{
         top: 0px;
         cursor:pointer;
 
-    }
-
-    svg{
-        width:70px; 
-        height:65px;
     }
 
     .nav{
@@ -605,4 +570,27 @@ svg{
         margin-bottom: 5px;
     }
 
+}
+@media  screen and (max-width:450px){
+    header{
+        width: 100%;
+        height: 100px;
+    }
+    .logo{
+        top: 15px !important;
+    }
+    .iconoMenu{
+        top :15px;
+    }
+    .barraIzquierda{
+        display: flex;
+        width:20%;
+    }
+    .barraDerecha{
+        display: flex;
+        width:20%;
+    }
+    .anuncio{
+        width: 60%;
+    }
 }

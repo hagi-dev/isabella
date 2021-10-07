@@ -2,15 +2,23 @@
 .carousel__card{
     width: 340px;
     height:500px;
-    background-image: radial-gradient(circle, #ffffff, #d8c9de, #bf91b2, #aa587a, #8d1839);
+    // background-image: radial-gradient(circle, #ffffff, #d8c9de, #bf91b2, #aa587a, #8d1839);
     display:grid;
+    background-color: rgba(237, 241, 241,0.2);
     position: relative;
-    grid-template-columns: 40% 60%;
     border-radius:20px;
     margin:0 auto;
+    backdrop-filter: blur(2px);
+    box-shadow:0 5px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid  rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
+    border-right: 1px solid  rgba(255, 255, 255, 0.2);
+    
+
 }
 .card__description{
     z-index: 999999;
+    position: absolute;
 }
 .card__description h1{
     width:150px;
@@ -28,11 +36,14 @@
     font-weight: 400;
     font-size:1rem;
     text-decoration:none;
-    color: black;
+    color: rgba(255, 255, 255, 0.4);;
     text-decoration: underline;
     margin-left: 50px; 
     width:300px;
-
+    cursor: pointer;
+    &:hover{
+        opacity:0.5;
+    }
 }
 
 .card__decoration{
@@ -66,9 +77,9 @@
     width: auto;
     height:500px;
     z-index:999999;
-    filter: drop-shadow(0 0px 50px 10px rgba(0, 0, 0, 0.7));
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-left: -9px;
 }
 
 

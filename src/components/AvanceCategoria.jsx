@@ -7,7 +7,7 @@ const AvanceCategoria = ({children}) => {
     
     return (
     <section className="avanceCategoria">
-        <div className="avanceCategoria-title"><h1>Avance catalogo temporada</h1></div>
+        <div className="avanceCategoria-title"><h1>Catalogo temporada agosto-setiembre</h1></div>
             {children}      
     </section>
     )

@@ -8,36 +8,77 @@
     margin-top: 50px;
  }
 
-.avanceCategoria__caballero-title{
+ .avanceCategoria__caballero-title{
     width:100%;
-    background-color: rgb(46, 46, 46);
     height :120px;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-}
+    color :rgb(40, 40, 194);
+    position: relative;
+    flex-direction: column;
+    justify-content:flex-end;
+    h1{
+        width:100%;
+        font-family: 'Monoton', cursive;
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
 
-.avanceCategoria__caballero-title h1{
-    width:100%;
-   font-family: 'Monoton', cursive;
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center;
-    color :white;
-}
-.avanceCategoria__caballero-title h3{
-    width:100%;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-    font-size:1rem;
-    display: inline-block;
-   cursor: pointer;
-   text-align: center;
-   color :white;
-   margin-bottom: 5px;
-   &:hover{
-       opacity: .5;
-   }
-}
+    h3{
+        width:20%;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        font-size:1rem;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 5px;
+        &:hover{
+            opacity: .5;
+        }
 
+    }
+    a{
+        span{
+            display:flex;
+            align-items: center;
+        }
+        
+        width:15%;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 400;
+        font-size:1rem;
+        display: flex;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        margin-bottom: 5px;
+        transition:ease all 0.5s;
+        position: absolute;
+        justify-content: space-around;
+        right:8%;
+        svg{
+            width: 24px !important;
+            height: auto !important;
+            &:hover{
+                opacity: .5;
+                text-decoration: none;
+            }
+        }
+        
+    }
+ }
+
+ @media screen and (max-width:900px){
+    .avanceCategoria__caballero-title{
+        a{
+            position:relative;
+            width:50%;
+            right: 0%;
+        }
+    }
+ }

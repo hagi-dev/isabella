@@ -1,10 +1,12 @@
 @import url("https://use.typekit.net/nbc5fqs.css");
 section{
     width: 100%;
-    height: 1050px;
+    height: 100vh;
     // display: none;
     position: relative;
     z-index: 99;
+    overflow: hidden;
+    overflow: hidden;
 }
 .container__banner-principal {
     width: 100%;
@@ -24,7 +26,7 @@ section{
 }
 .fondo__banner img{
     width: 100%;
-    height: 720px;
+    height: 100vh;
 }
 .banner__title-contenido{
     height: 600px; 
@@ -211,7 +213,7 @@ section{
 }
 .banner__modelo-contenido img{
     width: auto;
-    height: 667px;
+    height: 100vh;
 }
 .MuiGrid-root{
     z-index: 99;
@@ -224,6 +226,9 @@ section{
 }
 
 @media only screen and (max-width:959px){
+    section{
+        height: 1160px;
+    }
     .container__banner-principal {
         width: 100%;
         height: 1330px;
@@ -272,9 +277,11 @@ section{
 }
 
 @media only screen and (max-width:650px){
+    .section__Banner{
+        height:1100px;
+    }
     .container__banner-principal {
         width: 100%;
-        height: 1330px;
         display: flex;
         align-items: flex-start;
         padding-top: 90px;
@@ -364,5 +371,106 @@ section{
     }
     .banner__modelo-contenido{
         display:block;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .section__Banner{
+        height:850px;
+    }
+    .container__banner-principal {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 90px;
+    
+    }
+    .banner__modelo-contenido img{
+        width: auto;
+        height: 450px;
+        
+    }
+    .banner__title-contenido{
+        height: 350px;
+    }
+    .fondo__banner{
+        height: 1081px;
+    }
+    
+    .fondo__banner img{
+        height: 1081px;
+    }
+
+    .modaEstilo{
+        font-size: 2rem;
+    }
+    .newCollection{
+        font-size: 2.8rem;
+    }
+
+    .circuloInferior{
+        width: 100px;
+        height: 100px;
+        top:48px;
+        left: 45px;
+    }
+    
+    .circuloSuperior{
+        width: 130px;
+        height: 130px;
+        left: 45px;
+    }
+    
+    .banner__circuloContenedor{
+        width: 250px;
+        height: 250px;
+        opacity: 100%;
+        border-radius:50%;
+        display:flex;
+        justify-content: center;
+        align-items:flex-start;
+        margin:0px;
+        
+    }
+        
+    .banner__linkAction a h2{
+        font-size: 0.6rem;
+        font-weight: 500;
+        position: absolute;
+        top: 95px;
+        left: 50px;
+
+    }
+    
+    .banner__linkAction h1{
+        font-size: 1.7rem;
+        font-weight: bold;
+        position: absolute;
+        color:white;
+        top: 105px;
+        left: 55px;
+    }
+
+    .banner__title-contenido P{
+        margin: 13px 0;
+        width: 400px; 
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+    .banner__callToAction-contenido{
+        font-family: lato, sans-serif;
+        display:flex;
+        justify-content: center;
+        padding-top: 60px;
+        position: relative;
+    }
+    .banner__botones{
+        width: 70% !important;
+    }
+    .banner__modelo-contenido{
+        display:block;
+    }
+    .banner__botones a {
+        width: 120px;
     }
 }

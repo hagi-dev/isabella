@@ -1,0 +1,228 @@
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 10s linear infinite ;
+    @keyframes movimiento{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(30px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    left: 5%;
+    animation-duration: 8s;
+    animation-delay: 8s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    background-color: red;
+    height: 100px;
+    left: 35%;
+    animation-duration: 8s;
+    animation-delay: 10s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    background-color: red;
+    height: 20px;
+    left: 15%;
+    animation-duration: 4.5s;
+    animation-delay: 12s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    left: 90%;
+    animation-duration: 10s;
+    animation-delay: 8s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    background-color: red;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 9s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 9s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(8){
+    width: 100;    height: 100px;
+    left: 52%;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    background-color: red;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    background-color: red;
+    height: 40px;
+    left: 35%;
+    animation-duration: 8s;
+    animation-delay: 9s;
+}
+
+
+.burbuja:nth-child(11){
+    width: 160px;
+    height: 160px;
+    background-color: red;
+    left: 10%;
+    animation-duration: 8s;
+    animation-delay: 8s;
+}
+
+.burbuja:nth-child(12){
+    width: 100px;
+    background-color: red;
+    height: 100px;
+    left: 60%;
+    animation-duration: 8s;
+    animation-delay: 10s;
+}
+
+.burbuja:nth-child(13){
+    width: 20px;
+    background-color: red;
+    height: 20px;
+    left: 4%;
+    animation-duration: 4.5s;
+    animation-delay: 12s;
+}
+
+.burbuja:nth-child(14){
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 70%;
+    animation-duration: 10s;
+    animation-delay: 8s;
+}
+
+.burbuja:nth-child(15){
+    width: 120px;
+    height: 120px;
+    left: 80%;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    background-color: red;
+}
+
+.burbuja:nth-child(16){
+    width: 20px;
+    height: 20px;
+    left: 65%;
+    animation-duration: 9s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(17){
+    width: 20px;
+    height: 20px;
+    left: 25%;
+    animation-duration: 9s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(18){
+    width: 100;    height: 100px;
+    left: 38%;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    background-color: red;
+}
+
+.burbuja:nth-child(19){
+    width: 65px;
+    height: 65px;
+    left: 85%;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    background-color: red;
+}
+
+.burbuja:nth-child(20){
+    width: 40px;
+    background-color: red;
+    height: 40px;
+    left: 55%;
+    animation-duration: 8s;
+    animation-delay: 9s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+        opacity: .1;
+    }
+    50%{
+        opacity: .3;
+    }
+    70%{
+        opacity: .5;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .burbujas{
+        display: none;
+    }
+}

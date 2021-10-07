@@ -31,11 +31,16 @@ class ButtomMenu extends React.Component
             document.getElementById("navA4").style.color="black";
             document.getElementById("navA5").style.color="black";
             document.getElementById('nav-list2').style.display = "block";
+            document.getElementById('header').style.position = "absolute !importan";
 
         }
         else{
             document.getElementById('nav-list2').classList.remove("active");
             document.getElementById('nav-list2').style.display = "none";
+            document.getElementById('main').style.display = "block";
+            if(innerWidth<960){
+                document.getElementById('body').style.overflowY = "scroll";
+            }
             if(this.props.estado){
                 console.log("aki")
                 console.log(this.props.estado);
@@ -76,20 +81,20 @@ class ButtomMenu extends React.Component
         return (
                     <div className="nav">
                     <div className="iconoMenu"  onClick={this.handleClik}>
-                        <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+                        <svg id="menuButtom" height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
                     </div>
                     <nav className="nav-list" id="nav-list2">
                         <ul>
                             {console.log(valor1)}
-                            <li><a id="navA1" className='navA' href="#" style={ this.props.estado ? {color:"black"} : {color:"white"}} >Home </a></li>       
-                            <li><a id="navA2"  className="navA" href="#" style={ this.props.estado ? {color:"black"} : {color:"white"}} >Catalogos</a></li>
-                            <li><a id="navA3" className="navA" href="#" style={ this.props.estado ? {color:"black"} : {color:"white"}} >Premios</a></li>
-                            <li><a id="navA4" className="navA" href="#" style={ this.props.estado ? {color:"black"} : {color:"white"}} >Blog</a></li>
+                            <li><a id="navA1" className='navA' href="/" style={ this.props.estado ? {color:"black"} : {color:"white"}} >Home </a></li>       
+                            <li><a id="navA2"  className="navA" href="/catalogos" style={ this.props.estado  ? {color:"black"} : {color:"white"}} >Catalogo actual</a></li>
+                            <li><a id="navA3" onClick={this.handleClik} className="navA" href="#premios" style={ this.props.estado  ? {color:"black"} : {color:"white"}} >Premios</a></li>
+                            <li><a id="navA4" className="navA" href="#" style={ this.props.estado  ? {color:"black"} : {color:"white"}} >Blog</a></li>
                         </ul> 
                     </nav>
-                    <div className="barraIzquierda" id="barraIzquierda" style={scrolled ? {backgroundColor:"#8D1839"}: { backgroundColor:"white"}}></div>
-                        <a style={ this.props.estado ? {color:"black"} : {color:"white"}} className="anuncio navA" href="#" id="navA5">* Trabaja con catalogo isabella *</a>
-                    <div className="barraDerecha" id="barraDerecha" style={scrolled ? {backgroundColor:"#8D1839"}: { backgroundColor:"white"}}></div>
+                    <div className="barraIzquierda" id="barraIzquierda" style={scrolled  ?  {backgroundColor:"#8D1839"}: { backgroundColor:"white"}}></div>
+                        <a style={ this.props.estado  ? {color:"black"} : {color:"white"}} className="anuncio navA" href="#" id="navA5">* Trabaja con catalogo isabella *</a>
+                    <div className="barraDerecha" id="barraDerecha" style={scrolled  ? {backgroundColor:"#8D1839"}: { backgroundColor:"white"}}></div>
                 </div>
         )
     }
