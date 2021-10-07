@@ -16,38 +16,29 @@ const Header = (props) =>{
     
      
     React.useEffect(()=>{
-        let estado= window.pageYOffset;
-        console.log(estado);
         const verNav=() =>{
             if(innerWidth>960 ) {
                 document.getElementById("nav-list2").style.display = "block";
+                document.getElementById('body').style.overflowY = "scroll";
+
             }else{
                 document.getElementById("nav-list2").style.display = "none";
             }
             console.log('aki esta el problema')
         }
-        const changeColor= () =>{
-        let valor2=window.pageYOffset;//valor2 es la referencia al valor canbiante de el evento scroll
-        console.log("valor2: ",valor2 , "estado: ", estado) ;
-        
-            if (valor2 >= estado ) {
-                console.log('agarra')
-                document.getElementById("header").style.display = "none";
-            }else{
-                document.getElementById("header").style.display = "flex";
-            }
-            estado= valor2;
-    
+        const cambioPosicion= () =>{
+            
         }
-        window.addEventListener("scroll",changeColor);
+
         window.addEventListener("resize",verNav);
+        window.addEventListener("scroll",cambioPosicion)
     })
 
     return(
 
-    <header id="header" style={ scrolled  ? {background:"white",boxShadow: '5px 0px 16px 0 rgb(0 0 0 / 24%)'} : {background:"transparent", transition: '1.5 ease all'}}>
+    <header id="header" style={ scrolled ? {background:"white",boxShadow: '5px 0px 16px 0 rgb(0 0 0 / 24%)'} : {background:"transparent", transition: '1.5 ease all'}}>
         <div className="logo">
-            <img id="logo" src={ scrolled ? logo4 : logo3} alt="logo isabella"/>
+            <a href="/"><img id="logo" src={ scrolled ? logo4 : logo3} alt="logo isabella"/></a>
         </div>  
         <ButtomMenu estado={scrolled} />        
         <div className="redesSociales">
