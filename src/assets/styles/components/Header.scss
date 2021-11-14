@@ -1,18 +1,40 @@
 header{
-    width: 100%;
+    width: 100vw;
     height: 75px;
-    padding-left: 50px;
-    padding-top: 14;
     display: flex;
     position: fixed;
-    left:0px;
-    top:0;
+    left: 0;
+    top: 0;
+    right: 0;
     z-index: 9999;
     background-color:transparent;
-    transition: ease all 0.5s;
+    transition: ease all 0.3s;
+    transform: translateY(0px);
+    .anuncio{
+        opacity: 1;
+       
+    }
+    .barraIzquierda{
+        opacity: 1;
+    }
+    .barraDerecha{
+       opacity: 1;
+    }
     
 }
-
+#header.active{
+    transform: translateY(-90px);
+    .anuncio{
+        opacity: 0;
+       
+    }
+    .barraIzquierda{
+        opacity: 0;
+    }
+    .barraDerecha{
+       opacity: 0;
+    }
+}
 
 
 .logo{
@@ -20,6 +42,7 @@ header{
     align-items: center;
     width: 15%;
     height: 70px;
+    margin-left:15px;
 }
 
 .logo img{
@@ -145,9 +168,7 @@ svg{
 
 @media only screen and (max-width:960px){
     header{
-        width: 100%;
         height: 90px;
-        padding: 0;
     }
     .logo{
         display: flex;
@@ -155,8 +176,8 @@ svg{
         width: 250px;
         height: 70px;
         position:absolute;
-        left:15px;
         z-index: 9;
+        cursor: pointer;
         
     }
     
@@ -165,17 +186,9 @@ svg{
         width:auto;
         height: auto;
         max-width: 200px;
+        cursor: pointer !important;
     }
 
-    .iconoMenu{
-        display:flex;
-        position:absolute;
-        right:50px;
-        top: 0px;
-        cursor:pointer;
-        width:40px; 
-        height:40px;
-    }
     .iconoMenu{
         display:flex;
         position:absolute;
@@ -189,6 +202,10 @@ svg{
     #menuButtom{
         width:70px; 
         height:65px;
+        fill:white;
+    }
+    #menuButtom.active{
+        fill:black;
     }
 
     .nav{
@@ -204,16 +221,17 @@ svg{
 
     }
 
-    .nav-list{
+    #nav-list2{
         display: none;
         position:absolute;
-        top: 100px;
+        top: 90px;
         width: 100%;
         height: 100vh;
+        color: black !important;
 
     }
 
-    .nav-list.active{
+    #nav-list2.active{
         display:block;
         background-color: white;
     }
@@ -223,6 +241,7 @@ svg{
         list-style: none;      
         padding:0;
         text-align:center;
+        color: black !important;
     }
     
     .nav nav ul li{
@@ -243,7 +262,7 @@ svg{
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         width: 36%;
         text-align:center;
        
@@ -266,17 +285,12 @@ svg{
 }
 
 @media only screen and (max-width:792px){
-    header{
-        width: 100%;
-        height: 90px;
-    }
     .logo{
         display: flex;
         align-items: center;
         width: 250px;
         height: 70px;
         position:absolute;
-        left:15px;
         
     }
     
@@ -373,17 +387,12 @@ svg{
 }
 
 @media only screen and (max-width:650px){
-    header{
-        width: 100%;
-        height: 90px;
-    }
     .logo{
         display: flex;
         align-items: center;
         width: 250px;
         height: 70px;
         position:absolute;
-        left:15px;
         
     }
 
@@ -419,15 +428,6 @@ svg{
         align-items: flex-end;
         justify-content: space-around;
         padding-bottom: 5px;
-    }
-
-    .nav-list{
-        display: none;
-    }
-    .nav-list-active{
-        display: block;
-        background-color: white;
-
     }
     
     .nav nav ul{
@@ -481,17 +481,14 @@ svg{
 
 @media only screen and (max-width:540px){
     header{
-        width: 100%;
         height: 90px;
     }
     .logo{
         display: flex;
         align-items: center;
         width: 250px;
-        height: 70px;
-        position:absolute;
-        left:15px;
-        
+        height: 66px;
+        position: absolute;
     }
     
     .logo img{
@@ -504,9 +501,11 @@ svg{
     .iconoMenu{
         display:flex;
         position:absolute;
-        right:20px;
+        right:15px;
         top: 0px;
         cursor:pointer;
+        align-items: center;
+        height: 63px;
 
     }
 
@@ -517,21 +516,6 @@ svg{
         align-items: flex-end;
         justify-content: space-around;
         padding-bottom: 5px;
-    }
-
-    .nav-list{
-        display: none;
-    }
-    .nav-list-active{
-        display: block;
-        background-color: white;
-
-    }
-    
-    .nav nav ul{
-    
-        list-style: none;      
-        padding:0;
     }
     
     .nav nav ul li{
@@ -571,16 +555,18 @@ svg{
     }
 
 }
-@media  screen and (max-width:450px){
+@media  screen and (max-width:480px){
     header{
-        width: 100%;
-        height: 100px;
+        height: 90px;
+        padding: 0;
     }
     .logo{
         top: 15px !important;
+        height: 40px;
     }
     .iconoMenu{
         top :15px;
+        height: 40px;
     }
     .barraIzquierda{
         display: flex;
