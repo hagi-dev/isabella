@@ -6,7 +6,7 @@
     position: absolute;
     bottom: -150;
     
-    animation: burbujas 10s linear infinite ;
+    animation: burbujas 5s linear infinite ;
     @keyframes movimiento{
         0%{
             transform: translateY(0);
@@ -210,10 +210,10 @@
         opacity: .1;
     }
     50%{
-        opacity: .3;
+        opacity: .2;
     }
     70%{
-        opacity: .5;
+        opacity: .3;
     }
     100%{
         bottom: 100%;
@@ -225,4 +225,23 @@
     .burbujas{
         display: none;
     }
+    .burbuja:nth-child(11){ display: none; }
+    .burbuja:nth-child(12){ display: none; }
+
+    .burbuja:nth-child(13){ display: none; }
+
+    .burbuja:nth-child(14){ display: none; }
+
+    .burbuja:nth-child(15){ display: none; }
+
+    .burbuja:nth-child(16){ display: none; }
+
+    .burbuja:nth-child(17){ display: none; }
+
+    .burbuja:nth-child(18){ display: none; }
+
+    .burbuja:nth-child(19){ display: none; }
+
+    .burbuja:nth-child(12){ display: none; }
+
 }

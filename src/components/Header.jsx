@@ -24,10 +24,18 @@ const Header = (props) =>{
             }else{
                 document.getElementById("nav-list2").style.display = "none";
             }
-            console.log('aki esta el problema')
         }
+        let estado= window.pageYOffset;
         const cambioPosicion= () =>{
+            let valor2=window.pageYOffset;//valor2 es la referencia al valor canbiante de el evento scroll
+            console.log("valor2: ",valor2 , "estado: ", estado) ;
             
+            if (valor2 >= estado) {
+                document.getElementById('header').classList.add("active");
+            }else{
+                document.getElementById('header').classList.remove("active");
+            }
+            estado= valor2;
         }
 
         window.addEventListener("resize",verNav);
@@ -36,9 +44,9 @@ const Header = (props) =>{
 
     return(
 
-    <header id="header" style={ scrolled ? {background:"white",boxShadow: '5px 0px 16px 0 rgb(0 0 0 / 24%)'} : {background:"transparent", transition: '1.5 ease all'}}>
+    <header id="header" className="header" style={ scrolled ? {background:"white",boxShadow: '5px 0px 16px 0 rgb(0 0 0 / 24%)'} : {background:"transparent", transition: '1.5 ease all'}}>
         <div className="logo">
-            <a href="/"><img id="logo" src={ scrolled ? logo4 : logo3} alt="logo isabella"/></a>
+            <a href="/home"><img id="logo" src={ scrolled ? logo4 : logo3} alt="logo isabella"/></a>
         </div>  
         <ButtomMenu estado={scrolled} />        
         <div className="redesSociales">

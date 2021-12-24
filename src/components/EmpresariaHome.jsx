@@ -25,7 +25,14 @@ const EmpresariaHome = () => {
                     <Box className="Empresaria__container-description">
                         <div className="Empresaria__description">
                             <h1>SE UNA EMPRESARIA DE EXITO </h1>
-                            <p className="Empresaria__description-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'
+                            <p className="Empresaria__description-p"> 	Ganancia desde el <strong>25% al 30%</strong>en calzados de campaña. 
+                                Ganancia desde el <strong>30% al 35%</strong> en  prendas de campaña. 
+                                Puede solicitar  apartir de 5 productos minimo.
+                                El envío es totalmente GRATIS a partir de 12 productos.
+                                Disponemos de catálogos especializados los cuales se renuevan cada dos meses aproximadamente.
+                                Tenemos INCENTIVOS por ventas de cada pedido realizado.
+                                Tambien accede a nuestro catalogo de super liquidación de 50% y 60%
+                                PREMIOS por recomendar nuestra marca.
                             </p>
                             <Buttom name={"Mas detalles"} estilo={"balck"}/> 
                         </div>
