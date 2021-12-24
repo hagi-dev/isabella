@@ -31,6 +31,7 @@ const Footer = () => {
                             <li><a href="">Empresas que trabajamos</a></li>
                             <li><a href="">nosotros</a></li>
                             <li><a href="">preguntas frecuentes</a></li>
+                            <li><a href="http://192.168.100.71:80/login">Acseso Sistema</a></li>
                         </ul>
                     </nav>    
                 </div> 
